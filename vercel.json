@@ -1,0 +1,7 @@
+{
+	"rewrites": [
+		{
+			"source" : "/Sign_Up" , "destination": "/"
+		}
+	]
+}
