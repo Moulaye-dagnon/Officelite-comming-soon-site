@@ -1,0 +1,50 @@
+.TimerContainer{
+
+	margin: 0  auto auto ;
+	max-width: 448px;
+	
+}
+.compteur{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.compteur h1{
+	color: #FFF;
+text-align: center;
+padding: 18px 35px;
+border-radius: 4px;
+line-height: 2.66rem;
+background-color: #333950;
+margin: 0 10px;
+
+}
+.compteur h1:first-child{
+	margin-left: 0;
+}
+.compteur h1:last-child{
+	margin-right: 0;
+}
+.TimerContainer> h1{
+font-size: 0.888rem;
+line-height: 2.5666rem;
+letter-spacing: 0.222rem;
+text-transform: uppercase;
+}
+.compteur span{
+	display: block;
+text-align: center;
+font-size: 0.66rem;
+font-weight: 700;
+margin-top: 15px;
+line-height: 1.55rem;
+}
+.compteur.BackgroundColorBlue h1{
+	background-color: rgba(81, 117, 255, .1);
+	color: #5175FF;
+
+}
+.compteur.BackgroundColorBlue span{
+	color: #333950;
+}

@@ -1,0 +1,50 @@
+.SignUpContainer{
+	position: relative;
+	display: flex;
+	
+	flex-direction: column;
+	
+}
+.sectionOne{
+	padding: 23px 0 296px 0;
+	
+}
+.sectionTwo{
+	background-color: #25293A;
+	height: 320px;
+	width: 100%;
+	flex: none;
+	 background-image: url(../assets/home/bg-pattern-header.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover; 
+}
+/* .ImgFooter{
+	width: 100%;
+}
+a{
+	width: 100%;
+	display: block;	
+} */
+@media only screen and (min-width:1200px) {
+	.SignUpContainer{
+		flex-direction: row;
+		align-items: center;
+		
+	}
+	.sectionOne{
+		height: 100vh;
+		width: calc(100% - 420px);
+	}
+	.sectionTwo{
+		height: 100vh;
+		width: 420px;
+		justify-items: flex-end;
+		text-align: center;
+	}
+	.sectionOne .officelite-img{
+		margin-left: 200px;
+	}
+	
+	
+}
