@@ -1,50 +1,73 @@
 .SignUpContainer{
-	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	
+}
+.SignUpContainer main{
+	width: 95%;
+	margin: 0 auto;	
+}
+.SignUpContainer .bg-pattern{
+	position: absolute;
+	top: 950px;
+	width: 100%;
+	height: 330px;
+	z-index: -1;
 	display: flex;
-	
-	flex-direction: column;
-	
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
-.sectionOne{
-	padding: 23px 0 296px 0;
-	
-}
-.sectionTwo{
-	background-color: #25293A;
-	height: 320px;
-	width: 100%;
-	flex: none;
-	 background-image: url(../assets/home/bg-pattern-header.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size:cover; 
-}
-/* .ImgFooter{
+.bg-pattern-img{
+    margin-right: 586px;
+    margin-top: 27px;
 	width: 100%;
 }
-a{
-	width: 100%;
-	display: block;	
-} */
-@media only screen and (min-width:1200px) {
+.SignUpContainer .TimerContainer{
+	margin: 0px   auto;
+
+}
+
+
+@media only screen and (min-width:1050px) {
 	.SignUpContainer{
-		flex-direction: row;
+		position: static;
+	}
+	.SignUpContainer .bg-pattern{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		height: 100%;
+		z-index: -1;
+		display: flex;
+		justify-content: center;
 		align-items: center;
+	}
+	.SignUpContainer main{
+		padding-bottom: 0;
 		
 	}
-	.sectionOne{
-		height: 100vh;
-		width: calc(100% - 420px);
+	.SignUpContainer .TimerContainer{
+		margin: 0px ;
+	
 	}
-	.sectionTwo{
-		height: 100vh;
-		width: 420px;
-		justify-items: flex-end;
-		text-align: center;
+	.SignUpContainer .text{
+		margin-left: 0;
+		margin-bottom: 0;
 	}
-	.sectionOne .officelite-img{
-		margin-left: 200px;
+	.bg-pattern-img{
+		margin-bottom: 500px;
+		transform: rotate(180deg);
+		margin-right: 0;
+    	margin-top: 0;
 	}
+
+	
+
+	
 	
 	
 }

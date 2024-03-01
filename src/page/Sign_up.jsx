@@ -2,11 +2,14 @@ import './Sign_Up.css'
 import { Timer } from "../component/Timer";
 import { Header } from "../component/header";
 import { FormComponent } from '../component/form';
-import FooterImg from '../assets/home/bg-pattern-header.svg'
+import bg_pattern_img from '../assets/home/bg-pattern-footer.svg'
 export function SignUp(){
 	return( 
 		<div className="SignUpContainer">
-			<section className="sectionOne">
+			<div className='bg-pattern'>
+				<img src={bg_pattern_img} alt="" className='bg-pattern-img' />
+			</div>
+			<main>
 			<Header NotImg={true} BtnNOTExist={true}>
 					<h1>Work smarter. Save time.</h1>
 					<p>
@@ -15,13 +18,7 @@ export function SignUp(){
 			</Header>
 			<Timer Color={'Blue'}/>
 			<FormComponent/>
-			</section>
-			<section className="sectionTwo">
-				{/* <div className='ImgFooter'>
-					<img src={FooterImg} alt="" />
-				</div> */}
-			</section>
-
+			</main>			
 		</div>
 	)
 }

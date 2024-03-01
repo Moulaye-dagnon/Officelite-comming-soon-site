@@ -2,7 +2,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 87px;
+	top: 800px;
 	border-radius: 13px;
 	background: #FFF;
 	box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.25);
@@ -13,7 +13,7 @@
 	text-align: center;
 
 }
-.Form input , .Form select option{
+.Form input {
 	width: 100%;
     height: 45px;
     border: none;
@@ -23,29 +23,85 @@
 .Form input:focus{
 	opacity: 1;
 }
-.Form select{
-
-	width: 100%;
-	height: 45px;
-	border: none;
-    border-bottom: 1px solid #747B95;
-	appearance: none;
-}
 .Form .select_wrapper{
 	position: relative;
+	margin-bottom: 6px;
+	
 }
 .Form img{
 	width: 100%;
 }
-.Form .select_wrapper::after{
-	content: '';
-	display: inline-block;
-	width: 15px;
-	height: 7px;
-	background:  url(../assets/sign-up/icon-arrow-down.svg) no-repeat;
-	top: 18px;
+.select_wrapper .ArrowImg{
+	width: 11px;
+	height: 5.5px;
 	right: 2px;
 	position: absolute;
+	margin: 0;
+}
+.select_wrapper .select{
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #747B95;
+	text-align: left;
+}
+.select_wrapper .select label{
+	display: block;
+	width: 100%;
+	font-weight: bold;
+}
+.select_wrapper .select label span{
+	opacity: 0.4;
+	margin-left: 10px;
+}
+
+.select_wrapper .select input{
+	display: none;
+}
+
+.select-option  {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	margin: 0;
+	border-radius: 8px;
+	padding: 24px 32px;
+	border: 1px solid rgba(51, 57, 80, 0.15);
+	background: #FFF;
+	box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.75);
+}
+.select-option li {
+	list-style-type: none;
+    border-bottom: 1px solid #747B95;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 16px ;
+	margin-bottom: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+.select-option span {
+	opacity: 0.4;
+	margin-left: 5px;
+}
+.select-option li:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+	padding-bottom: 0;
+
+}
+.select-option .CheckValues{
+	position: relative;
+}
+.select-option .CheckValues::after{
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	background-image: url('../assets/sign-up/icon-check.svg');
+	position: absolute;
+	right: 0;
+	top: 8px;
+	
 }
 .Form div{
 	margin: 24px 0;
@@ -58,19 +114,17 @@
 }
 .Form button{
 	width: 100%;
+	margin-top: 16px;
 }
-@media only screen and (min-width:768px) {
-	.Form{
-		min-width:  445px;
-	}	
-}
-@media only screen and (min-width:1200px) {
+
+@media only screen and (min-width:1050px) {
 	.Form{
 		left: auto;
 		transform: none;
-		top: 237px;
-		bottom: auto;
-		right: 165px;
+		top: 180px;
+		right: 120px;
+		min-width: 445px;
+		padding: 40px;
 	}
 }
 

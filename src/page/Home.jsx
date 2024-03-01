@@ -1,4 +1,5 @@
-import './Home.css'
+import './Home.css';
+import bg_pattern_img from '../assets/home/bg-pattern-footer.svg'
 import { Header } from "../component/header";
 import { Card } from '../component/card';
 import { Timer } from '../component/Timer';
@@ -8,6 +9,10 @@ export function Home(){
 	
 	return (
 		<div className="container">
+			<div className='bg-pattern'>
+				<img src={bg_pattern_img} alt="" className='bg-pattern-img' />
+			</div>
+			<main>
 			<Header>
 			<h1>A simple solution to complex tasks is coming soon</h1>
             <p>
@@ -25,6 +30,7 @@ export function Home(){
 			 <Timer/>
 			 <Button Href={'/Sign_Up'} name={'Get Started'}/>
 			</div>
+			</main>
 		</div>
 	)
 }

@@ -1,6 +1,4 @@
 .TimerContainer{
-
-	margin: 0  auto auto ;
 	max-width: 448px;
 	
 }
@@ -13,11 +11,11 @@
 .compteur h1{
 	color: #FFF;
 text-align: center;
-padding: 18px 35px;
+padding: 5px 18px;
 border-radius: 4px;
 line-height: 2.66rem;
 background-color: #333950;
-margin: 0 10px;
+margin: 0 5px;
 
 }
 .compteur h1:first-child{
